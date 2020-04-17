@@ -3,8 +3,9 @@
    <h1>Let’s start chatting...</h1>
   <br />
   Click the button to start a chat.
-  <br />
-  <style type='text/css'>
+  <br /> 
+
+ <style type='text/css'>
     .embeddedServiceHelpButton .helpButton .uiButton {
         background-color: #005290;
         font-family: "Arial", sans-serif;
@@ -22,44 +23,32 @@
 
         embedded_svc.settings.defaultMinimizedText = 'Agent Online'; //(Defaults to Chat with an Expert)
         embedded_svc.settings.disabledMinimizedText = 'Agent Offline'; //(Defaults to Agent Offline)
-        embedded_svc.settings.avatarImgURL = "https://customer-zukl--capitachat--c.cs86.visual.force.com/resource/1583918304000/AgentIcon";
+        embedded_svc.settings.avatarImgURL = "/resource/1583918304000/AgentIcon";
         embedded_svc.settings.chatbotAvatarImgURL = "https://customer-zukl--capitachat--c.cs86.visual.force.com/resource/1583918304000/BotIcon";
-        
-        //embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
-        //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
-
-        // Settings for Chat
-        //embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-            // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
-            // Returns a valid button ID.
-        
-        
-        //};
-        
         embedded_svc.settings.extraPrechatInfo = [{
-  "entityFieldMaps": [{
-    "doCreate":true,
-    "doFind":true,
-    "fieldName":"LastName__c",
-    "isExactMatch":true,
-    "label":"Last Name"
-  }, {
-    "doCreate":true,
-    "doFind":true,
-    "fieldName":"FirstName__c",
-    "isExactMatch":true,
-    "label":"First Name"
-  },{
-    "doCreate":true,
-    "doFind":true,
-    "fieldName":"Email__c",
-    "isExactMatch":true,
-    "label":"Email"
-  }],
-  "entityName":"WebChat_Contact__c",
-  "showOnCreate": true,
-  "saveToTranscript":"WebChat_Contact__c"
-},
+              "entityFieldMaps": [{
+              "doCreate":true,
+              "doFind":true,
+              "fieldName":"LastName__c",
+              "isExactMatch":true,
+              "label":"Last Name"
+             }, {
+              "doCreate":true,
+              "doFind":true,
+              "fieldName":"FirstName__c",
+              "isExactMatch":true,
+              "label":"First Name"
+             },{
+            "doCreate":true,
+            "doFind":true,
+            "fieldName":"Email__c",
+            "isExactMatch":true,
+            "label":"Email"
+             }],
+             "entityName":"WebChat_Contact__c",
+             "showOnCreate": true,
+             "saveToTranscript":"WebChat_Contact__c"
+        },
 {
   "entityFieldMaps": [{
     "doCreate":false,
@@ -83,20 +72,10 @@
   "entityName":"Contact"
 }
 ];
-        embedded_svc.settings.prepopulatedPrechatFields = [{
-        "label":"	Record Type",
-        "value":”0127E000001imOD”,
-        "transcriptFields":[ "RecordTypeId" ],
-        "displayToAgent":true
-}];
-
-        //embedded_svc.settings.extraPrechatFormDetails = [{"label":"Consent provided", "transcriptFields": ["Consent_provided__c"]}];
-        //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-        //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-
+        embedded_svc.settings.extraPrechatFormDetails = [{"label":"First Name", "transcriptFields": ["First_Name__c"]}];
+   
         embedded_svc.settings.enabledFeatures = ['LiveAgent'];
         embedded_svc.settings.entryFeature = 'LiveAgent';
-
         embedded_svc.init(
             'https://customer-zukl--CapitaChat.cs86.my.salesforce.com',
             'https://capitachat-futureyou.cs86.force.com/',
