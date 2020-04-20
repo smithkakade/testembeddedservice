@@ -63,7 +63,7 @@
   "entityName":"Contact"
 }
 ];
-        embedded_svc.settings.extraPrechatFormDetails = [{"label":"Record Type ID","value":"0127E000001imOD","transcriptFields":[ "RecordTypeId" ],"displayToAgent":true},{"label":"Last Name", "transcriptFields": ["Last_Name__c"]},{"label":"First Name", "transcriptFields": ["First_Name__c"]},{"label":"Email", "transcriptFields": ["Email__c"]}];  
+        embedded_svc.settings.extraPrechatFormDetails = [{"label":"Record Type ID","value":"0120C0000006udf","transcriptFields":[ "RecordTypeId" ],"displayToAgent":true},{"label":"Last Name", "transcriptFields": ["Last_Name__c"]},{"label":"First Name", "transcriptFields": ["First_Name__c"]},{"label":"Email", "transcriptFields": ["Email__c"]}];  
         //embedded_svc.settings.prepopulatedPrechatFields = [{"label":"Consent provided", "transcriptFields": ["Consent_provided__c"]}]; 
         //embedded_svc.settings.extraPrechatFormDetails = [{"label":"Consent provided", "transcriptFields": ["Consent_provided__c"]}];
         //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
