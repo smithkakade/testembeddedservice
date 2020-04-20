@@ -68,7 +68,7 @@
  "label":"Record Type ID",         
  "value":"0120C0000006udf",         
  "transcriptFields":[ "RecordTypeId" ],         
- "displayToAgent":false }];         
+ "displayToAgent":true }];         
 
         embedded_svc.settings.enabledFeatures = ['LiveAgent'];
         embedded_svc.settings.entryFeature = 'LiveAgent';
